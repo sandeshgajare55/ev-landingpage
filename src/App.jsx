@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Background from "./components/Background/Background.jsx";
 import { Navbar } from "./components/Navbar/Navbar.jsx";
 import { Hero } from "./components/Hero/Hero.jsx";
-import { Home } from "./components/Home/Home.jsx";
 export const App = () => {
   let heroData = [
     { text1: "Dive Into", text2: "Speed" },
@@ -23,7 +22,6 @@ export const App = () => {
 
   return (
     <div>
-      <Home />
       <Background playStatus={playStatus} heroCount={heroCount} />
       <Navbar />
       <Hero
