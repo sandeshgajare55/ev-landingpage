@@ -25,4 +25,20 @@ font-weight: 500;
     padding: 10px 38px;
     background: #fff;
     color: #262626;
+    text-decoration: none;
+}
+
+.nav-home{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-explore{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-about{
+    color: #fff;
+    text-decoration: none;
 }
