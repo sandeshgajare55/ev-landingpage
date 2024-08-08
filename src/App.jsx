@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Background from "./components/Background/Background.jsx";
 import { Navbar } from "./components/Navbar/Navbar.jsx";
 import { Hero } from "./components/Hero/Hero.jsx";
+import Contact from "./components/Contact/Contact.jsx";
 export const App = () => {
   let heroData = [
     { text1: "Dive Into", text2: "Speed" },

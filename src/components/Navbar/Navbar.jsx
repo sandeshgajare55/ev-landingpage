@@ -27,7 +27,7 @@ export const Navbar = () => {
             </Link>
           </li>
           <li className="nav-contact">
-            <Link className="nav-contact" to="/contact">
+            <Link className="nav-contact" to="/contact" smooth={true} offset={-260} duration={500}>
               Contact
             </Link>
           </li>
