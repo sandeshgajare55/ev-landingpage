@@ -3,6 +3,10 @@ import Background from "./components/Background/Background.jsx";
 import { Navbar } from "./components/Navbar/Navbar.jsx";
 import { Hero } from "./components/Hero/Hero.jsx";
 import Contact from "./components/Contact/Contact.jsx";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./components/Home/Home.jsx";
+import About from "./components/About/About.jsx";
+import Explore from "./components/Explore/Explore.jsx";
 export const App = () => {
   let heroData = [
     { text1: "Dive Into", text2: "Speed" },
@@ -23,8 +27,17 @@ export const App = () => {
 
   return (
     <div>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/explore" element={<Explore />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
+
       <Background playStatus={playStatus} heroCount={heroCount} />
-      <Navbar />
       <Hero
         setPlayStatus={setPlayStatus} //to play/pause video
         heroData={heroData[heroCount]} // to render the text above

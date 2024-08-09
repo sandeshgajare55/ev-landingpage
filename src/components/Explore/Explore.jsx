@@ -1,7 +1,8 @@
-import React from 'react';
+import React from "react";
+import Background from "../Background/Background";
 
 function Explore() {
-  return <h2>Explore</h2>;
+  return <></>;
 }
 
 export default Explore;

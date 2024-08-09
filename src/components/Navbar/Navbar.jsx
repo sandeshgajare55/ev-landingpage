@@ -7,7 +7,7 @@ import Explore from "../Explore/Explore";
 // created a navbar which will display above
 export const Navbar = () => {
   return (
-    <Router>
+    <nav>
       <div className="nav">
         <div className="nav-logo">EV Landing</div>
         <ul className="nav-menu">
@@ -27,19 +27,18 @@ export const Navbar = () => {
             </Link>
           </li>
           <li className="nav-contact">
-            <Link className="nav-contact" to="/contact" smooth={true} offset={-260} duration={500}>
+            <Link
+              className="nav-contact"
+              to="/contact"
+              smooth="true"
+              offset={-260}
+              duration={500}
+            >
               Contact
             </Link>
           </li>
         </ul>
       </div>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/explore" element={<Explore />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
+    </nav>
   );
 };

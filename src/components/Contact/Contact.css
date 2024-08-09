@@ -57,11 +57,11 @@
     resize: none;
 }
 
-.btn dark-btn{
+.btn{
     border-radius: 50px;
-    padding: 10px 38px;
-    background: #fff;
-    color: #262626;
+    padding: 10px 25px;
+    background: #252527;
+    color: #f2f1f1;
     text-decoration: none;
 }
 
