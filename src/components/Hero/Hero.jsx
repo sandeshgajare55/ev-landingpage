@@ -2,9 +2,12 @@ import './Hero.css';
 import arrow_btn from '../../assets/arrow_btn.png';
 import play_icon from '../../assets/play_icon.png';
 import pause_icon from'../../assets/pause_icon.png';
+import Explore from '../Explore/Explore';
+import { useState, } from 'react';
 
 //we have call setHeroCount to return the values 012
 export const Hero = ({heroData,setHeroCount,heroCount,setPlayStatus,playStatus}) => {
+  
   return (
     <div className='hero'>
       <div className="hero-text">
